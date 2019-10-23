@@ -1,4 +1,4 @@
-package com.walker.design.strategy.hand;
+package com.walker.design.graphic.strategy;
 
 import java.util.Random;
 

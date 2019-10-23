@@ -1,6 +1,8 @@
-package com.walker.design.strategy.hand;
+package com.walker.design.graphic.strategy;
 
 /**
+ * Hand: 手势类
+ *
  * @author walker
  * @date 2019/10/18
  */
@@ -29,6 +31,12 @@ public class Hand {
         return fight(h) == -1;
     }
 
+    /**
+     * 判断猜拳结果
+     *
+     * @param h
+     * @return
+     */
     private int fight(Hand h) {
         if (this == h) {
             return 0;
