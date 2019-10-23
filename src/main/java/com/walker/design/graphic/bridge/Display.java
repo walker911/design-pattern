@@ -8,4 +8,28 @@ package com.walker.design.graphic.bridge;
  * @date 2019/10/23
  */
 public class Display {
+
+    private DisplayImpl impl;
+
+    public Display(DisplayImpl impl) {
+        this.impl = impl;
+    }
+
+    public void open() {
+
+    }
+
+    public void print() {
+
+    }
+
+    public void close() {
+
+    }
+
+    public final void display() {
+        open();
+        print();
+        close();
+    }
 }
