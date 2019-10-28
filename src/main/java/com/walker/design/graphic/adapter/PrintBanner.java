@@ -4,7 +4,7 @@ package com.walker.design.graphic.adapter;
  * @author walker
  * @date 2019/10/25
  */
-public class PrintBanner implements Print {
+public class PrintBanner extends Print {
 
     private Banner banner;
 
