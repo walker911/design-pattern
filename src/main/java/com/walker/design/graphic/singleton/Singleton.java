@@ -1,6 +1,8 @@
 package com.walker.design.graphic.singleton;
 
 /**
+ * Singleton模式：单例模式
+ *
  * @author walker
  * @date 2019/10/29
  */
