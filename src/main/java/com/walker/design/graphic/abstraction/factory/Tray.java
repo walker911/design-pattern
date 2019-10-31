@@ -10,7 +10,7 @@ import java.util.List;
  * @date 2019/10/30
  */
 public abstract class Tray extends Item {
-    private List<Item> tray = new ArrayList<>();
+    protected List<Item> tray = new ArrayList<>();
 
     public Tray(String caption) {
         super(caption);

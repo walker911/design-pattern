@@ -14,16 +14,16 @@ import com.walker.design.graphic.abstraction.factory.Tray;
 public class ListFactory extends Factory {
     @Override
     public Link createLink(String caption, String url) {
-        return null;
+        return new ListLink(caption, url);
     }
 
     @Override
     public Tray createTray(String caption) {
-        return null;
+        return new ListTray(caption);
     }
 
     @Override
     public Page createPage(String title, String author) {
-        return null;
+        return new ListPage(title, author);
     }
 }
