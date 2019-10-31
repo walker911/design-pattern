@@ -3,6 +3,8 @@ package com.walker.design.graphic.strategy;
 import java.util.Random;
 
 /**
+ * 根据上一局的手势从概率上计算出下一局的手势
+ *
  * @author walker
  * @date 2019/10/18
  */

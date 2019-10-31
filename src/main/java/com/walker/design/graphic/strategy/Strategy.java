@@ -2,6 +2,7 @@ package com.walker.design.graphic.strategy;
 
 /**
  * Strategy: 策略模式
+ * 猜拳策略
  *
  * @author walker
  * @date 2019/10/23
