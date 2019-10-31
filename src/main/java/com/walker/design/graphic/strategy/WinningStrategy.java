@@ -3,7 +3,7 @@ package com.walker.design.graphic.strategy;
 import java.util.Random;
 
 /**
- * 策略：
+ * 具体策略：
  * 若上局手势胜，则下局和上局相同
  * 若上局手势败，则下局随机出手势
  *
