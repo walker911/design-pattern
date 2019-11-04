@@ -1,0 +1,4 @@
+hyuki@hyuki.com=Yuki
+hanako@hyuki.com=Sato
+tomura@hyuki.com=Tomura
+mamoru@hyuki.com=Mamoura
