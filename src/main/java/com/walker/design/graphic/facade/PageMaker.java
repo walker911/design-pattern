@@ -2,6 +2,7 @@ package com.walker.design.graphic.facade;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Enumeration;
 import java.util.Properties;
 
 /**
@@ -36,11 +37,17 @@ public class PageMaker {
             writer.title("Link page");
             mailProperties.forEach((k, v) -> {
                 try {
-                    writer.link(String.valueOf(k), String.valueOf(v));
+                    writer.mailto(String.valueOf(k), String.valueOf(v));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             });
+            Enumeration en = mailProperties.propertyNames();
+            while (en.hasMoreElements()) {
+                String mailaddr = (String) en.nextElement();
+                String username = mailProperties.getProperty(mailaddr, "(unknown)");
+                writer.mailto(mailaddr, username);
+            }
             writer.close();
             System.out.println(filename + "is created.");
         } catch (IOException e) {
